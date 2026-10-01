@@ -4,34 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>About Me - Christopher</title>
+    <title>Contact - Christopher</title>
 </head>
 <body>
 
-    <h1>Create.Innovate.Inspire</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
 
-    <p>
-        Hello! My name is Christopher. I am a university student interested in
-        technology, programming, and learning new skills.
-    </p>
+    <main>
+        <section>
+            <h1>Contact Me</h1>
 
-    <h2>My Hobbies and Interests</h2>
+            <p>
+                Feel free to get in touch with me using the form below.
+            </p>
 
-    <ul>
-        <li>Programming</li>
-        <li>Graphic Design</li>
-        <li>Playing Guitar</li>
-    </ul>
+            <form>
 
-    <p>
-        Visit my favorite website:
-        <a href="https://www.youtube.com">YouTube</a>
-    </p>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-    <p>
-        Contact me:
-        <a href="mailto:wesalachris@gmail.com">Email Me</a>
-    </p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="project">Project Discussion</option>
+                    <option value="collaboration">Collaboration</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message"
+                          name="message"
+                          minlength="50"
+                          required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Subscribe to my newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <h2>Social Media</h2>
+
+            <p>
+                <a href="https://github.com/Wesala-crypto">GitHub</a>
+            </p>
+
+            <h2>Location and Timezone</h2>
+
+            <p>
+                Nairobi, Kenya
+            </p>
+
+            <p>
+                Timezone: East Africa Time (EAT), UTC+3
+            </p>
+
+        </section>
+    </main>
 
 </body>
 </html>
