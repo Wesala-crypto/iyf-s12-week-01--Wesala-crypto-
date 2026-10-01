@@ -1,24 +1,11 @@
-/* ===== GENERAL PAGE ===== */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
-    font-family: Times New Roman, Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: #ffffff;
+    background-color: #010736;
 
-    /* Dark code-style background */
-background-color: #010736;
-
-background-image: url("https://github.com/Wesala-crypto/iyf-s12-week-01--Wesala-crypto-/blob/main/images.jpg?raw=true");
-
-background-size: contain;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+    background-image:
         linear-gradient(rgba(8, 11, 22, 0.94), rgba(8, 11, 22, 0.96)),
         repeating-linear-gradient(
             0deg,
@@ -26,178 +13,102 @@ background-attachment: fixed;
             transparent 28px,
             rgba(0, 255, 255, 0.05) 29px
         ),
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 28px,
-            rgba(255, 0, 204, 0.04) 29px
-        );
+        url("https://github.com/Wesala-crypto/iyf-s12-week-01--Wesala-crypto-/blob/main/images.jpg?raw=true");
 
-    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(1, 7, 54, 0.9);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00ffff;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+section {
     text-align: center;
 }
 
-
-/* ===== MAIN HEADING ===== */
-
 h1 {
-    margin-top: 70px;
-    margin-bottom: 20px;
-
-    font-size: 55px;
-    color: #363199
-
-    text-shadow:
-        0 0 5px #00ffff,
-        0 0 15px #00ffff,
-        0 0 30px #00ffff;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
-
-
-/* ===== SUB HEADING ===== */
 
 h2 {
-    margin-top: 45px;
-
-    color: #ff00cc;
-    font-size: 30px;
-
-    text-shadow:
-        0 0 5px #ff00cc,
-        0 0 15px #ff00cc;
+    color: #00ffff;
 }
-
-
-/* ===== PARAGRAPHS ===== */
 
 p {
-    max-width: 750px;
-    margin: 20px auto;
-
-    padding: 15px 25px;
-
-    color: #dce7ff;
     font-size: 18px;
-    line-height: 1.7;
-
-    background: rgba(255, 255, 255, 0.04);
-
-    border-left: 3px solid #00ffff;
-    border-radius: 10px;
+    line-height: 1.6;
 }
-
-
-/* ===== HOBBY LIST ===== */
-
-ul {
-    width: 350px;
-    max-width: 90%;
-
-    margin: 25px auto;
-    padding: 20px;
-
-    list-style: none;
-
-    background: rgba(255, 255, 255, 0.05);
-
-    border: 1px solid rgba(0, 255, 255, 0.4);
-    border-radius: 15px;
-
-    box-shadow:
-        0 0 15px rgba(0, 255, 255, 0.15);
-}
-
-
-/* ===== HOBBY ITEMS ===== */
-
-li {
-    margin: 15px 0;
-    padding: 12px;
-
-    color: #ffd700;
-    font-size: 18px;
-    font-weight: bold;
-
-    background: rgba(255, 215, 0, 0.06);
-
-    border-radius: 8px;
-
-    transition: 0.3s;
-}
-
-
-/* Hover effect on hobbies */
-
-li:hover {
-    color: #ffffff;
-
-    background: rgba(255, 0, 204, 0.15);
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 0 15px rgba(255, 0, 204, 0.4);
-}
-
-
-/* ===== LINKS ===== */
 
 a {
     color: #00ffff;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    transition: 0.3s;
 }
 
-
-/* Link hover */
-
-a:hover {
-    color: #ff00cc;
-
-    text-shadow:
-        0 0 5px #ff00cc,
-        0 0 15px #ff00cc;
+article {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
 }
 
-
-/* ===== GENERAL LINK PARAGRAPH ===== */
-
-p a {
-    display: inline-block;
-
-    margin-left: 5px;
-    padding: 8px 15px;
-
-    border: 1px solid #00ffff;
-    border-radius: 8px;
-
-    background: rgba(0, 255, 255, 0.05);
+article img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
 }
 
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
 
-/* ===== RESPONSIVE DESIGN ===== */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 
-@media (max-width: 600px) {
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
 
-    h1 {
-        font-size: 40px;
-        margin-top: 40px;
-    }
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
 
-    h2 {
-        font-size: 25px;
-    }
-
-    p {
-        width: 90%;
-        font-size: 16px;
-    }
-
-    ul {
-        width: 85%;
-    }
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
 }
