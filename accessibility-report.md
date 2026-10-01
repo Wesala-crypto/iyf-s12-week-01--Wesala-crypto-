@@ -25,6 +25,11 @@ No link-text changes were required.
 ### 4. Language
 
 The HTML document includes the language attribute:
+ 
+ ### 5.Conclusion
+
+The accessibility audit showed that the website has good accessibility. The Lighthouse Accessibility score was 96/100, while the WAVE/AIM accessibility evaluation gave a score of 10/10. The page uses a proper heading hierarchy, descriptive links, and a language attribute. The background image is used as a decorative element through CSS, and no form inputs are present.
+
 
 ```html
 <html lang="en">
