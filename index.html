@@ -1,79 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact - Christopher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Your Name</title>
+<meta name="description" content="Portfolio of Your Name, aspiring web developer.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
-
-    <main>
-        <section>
-            <h1>Contact Me</h1>
-
-            <p>
-                Feel free to get in touch with me using the form below.
-            </p>
-
-            <form>
-
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject">
-                    <option value="general">General Inquiry</option>
-                    <option value="project">Project Discussion</option>
-                    <option value="collaboration">Collaboration</option>
-                </select>
-
-                <label for="message">Message</label>
-                <textarea id="message"
-                          name="message"
-                          minlength="50"
-                          required></textarea>
-
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Subscribe to my newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-            <h2>Social Media</h2>
-
-            <p>
-                <a href="https://github.com/Wesala-crypto">GitHub</a>
-            </p>
-
-            <h2>Location and Timezone</h2>
-
-            <p>
-                Nairobi, Kenya
-            </p>
-
-            <p>
-                Timezone: East Africa Time (EAT), UTC+3
-            </p>
-
-        </section>
-    </main>
-
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<a class="logo" href="index.html">Your Name</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="index.html" aria-current="page">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<section class="hero">
+<h1>Hi, I am Your Name.</h1>
+<p class="tagline">I am learning to build clear, accessible websites.</p>
+<p>I am a student at IYF Season 12, working through HTML, CSS and JavaScript one project at a time. This site collects what I build along the way.</p>
+<div class="links">
+<a class="btn" href="projects.html">See my projects</a>
+<a href="about.html">About me</a>
+<a href="contact.html">Contact me</a>
+</div>
+</section>
+</main>
+<footer><p>&copy; 2026 Your Name. Built with HTML and CSS.</p></footer>
 </body>
 </html>
