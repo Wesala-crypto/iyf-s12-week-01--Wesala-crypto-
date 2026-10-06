@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        figure img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Photo Gallery</h1>
+    </header>
+
+    <main>
+        <section class="gallery">
+
+            <figure>
+                <img src="https://picsum.photos/400/300?random=1" alt="Gallery image 1">
+                <figcaption>Nature</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/400/300?random=2" alt="Gallery image 2">
+                <figcaption>Adventure</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/400/300?random=3" alt="Gallery image 3">
+                <figcaption>Travel</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/400/300?random=4" alt="Gallery image 4">
+                <figcaption>Technology</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/400/300?random=5" alt="Gallery image 5">
+                <figcaption>Creativity</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/400/300?random=6" alt="Gallery image 6">
+                <figcaption>Inspiration</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+</body>
+</html>
