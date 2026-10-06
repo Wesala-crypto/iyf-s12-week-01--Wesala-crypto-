@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #2b211c;
+    background: #2a211d;
     color: #eee4d8;
     line-height: 1.6;
 }
@@ -16,166 +16,249 @@ body {
 /* Navigation */
 
 header {
-    background: #1f1815;
-    border-bottom: 1px solid #4b3930;
+    background: #211916;
+    border-bottom: 1px solid #49372e;
 }
 
 nav {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
     padding: 20px 30px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    color: #9bbfa8;
+    color: #9bb99e;
+    text-decoration: none;
     font-size: 25px;
+    font-weight: bold;
 }
 
 nav ul {
     display: flex;
-    gap: 10px;
     list-style: none;
+    gap: 8px;
 }
 
-nav a {
+nav ul a {
+    color: #d5c6b9;
     text-decoration: none;
-    color: #d9cabe;
-    padding: 10px 18px;
+    padding: 9px 16px;
     border-radius: 5px;
+
     transition: 0.3s;
 }
 
-nav a:hover {
-    background: #557a64;
-    color: #f5eee7;
+nav ul a:hover,
+nav ul a.active {
+    background: #526d5b;
+    color: #f4eee8;
 }
 
 
 /* Hero */
 
 .hero {
-    max-width: 950px;
+    max-width: 1150px;
+    min-height: 620px;
     margin: auto;
-    padding: 120px 30px 100px;
-    text-align: center;
+    padding: 90px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
 }
 
-.welcome {
-    color: #8faf98;
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #8faa96;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 3px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 56px;
-    color: #f3e9de;
+    font-size: 64px;
+    line-height: 1.05;
+    color: #f2e8dd;
     margin-bottom: 25px;
 }
 
+.hero h1 span {
+    color: #779b82;
+}
+
 .intro {
-    max-width: 680px;
-    margin: auto;
-    color: #c9b9aa;
-    font-size: 18px;
+    max-width: 590px;
+    color: #c5b5a7;
+    font-size: 17px;
 }
 
 
 /* Buttons */
 
 .buttons {
-    margin-top: 35px;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 14px;
+    margin-top: 32px;
 }
 
 .button {
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 12px 22px;
     border-radius: 5px;
-    background: #405c73;
-    color: #f4eee8;
     font-weight: bold;
+
     transition: 0.3s;
 }
 
-.green-button {
-    background: #557a64;
+.primary {
+    background: #5f8068;
+    color: #172019;
+}
+
+.secondary {
+    background: #3d5665;
+    color: #eee8e1;
 }
 
 .button:hover {
-    background: #759985;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+
+/* Hero card */
+
+.hero-card {
+    width: 330px;
+    min-height: 330px;
+
+    padding: 30px;
+
+    background: #332721;
+    border: 1px solid #514037;
+    border-radius: 10px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-top {
+    color: #8faa96;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.code-box {
+    background: #211916;
+    border-left: 4px solid #5f8068;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.code-box p {
+    color: #7794a3;
+    font-family: monospace;
+}
+
+.code-box h2 {
+    color: #eee4d8;
+    font-family: monospace;
+    margin: 5px 0;
+}
+
+.card-text {
+    color: #b9a99c;
 }
 
 
 /* Interests */
 
-.hobbies {
-    max-width: 1100px;
+.interests {
+    max-width: 1150px;
     margin: auto;
-    padding: 70px 30px;
+    padding: 80px 30px;
 }
 
-.hobbies h2 {
-    text-align: center;
-    color: #d8c5b4;
-    font-size: 30px;
-    margin-bottom: 35px;
+.section-label {
+    color: #779b82;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
-.hobby-container {
+.interests h2 {
+    font-size: 36px;
+    color: #eee4d8;
+    margin-bottom: 40px;
+}
+
+.interest-container {
     display: flex;
-    gap: 22px;
+    gap: 20px;
 }
 
-.hobby-card {
+.interest-card {
     flex: 1;
-    background: #332720;
-    border: 1px solid #514037;
-    border-radius: 7px;
+    background: #30241f;
+    border: 1px solid #4b3930;
+    border-radius: 8px;
     padding: 30px;
+
     transition: 0.3s;
 }
 
-.hobby-card:hover {
-    border-color: #668b73;
-    transform: translateY(-4px);
+.interest-card:hover {
+    transform: translateY(-5px);
+    border-color: #6f9179;
 }
 
-.hobby-card h3 {
-    color: #9bbfa8;
-    margin-bottom: 12px;
+.number {
+    color: #617f8e;
+    font-family: monospace;
+    font-size: 14px;
 }
 
-.hobby-card p {
-    color: #c5b5a7;
+.interest-card h3 {
+    color: #9bb99e;
+    font-size: 21px;
+    margin: 18px 0 12px;
+}
+
+.interest-card p {
+    color: #bcaea2;
 }
 
 
 /* Footer */
 
 footer {
-    margin-top: 60px;
-    padding: 25px;
+    background: #211916;
+    border-top: 1px solid #49372e;
     text-align: center;
-    background: #1f1815;
-    color: #9e8e82;
+    padding: 25px;
+    color: #95867b;
 }
 
 
 /* Mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     nav {
         flex-direction: column;
-        gap: 15px;
+        gap: 18px;
     }
 
     nav ul {
@@ -184,25 +267,40 @@ footer {
     }
 
     .hero {
-        padding-top: 80px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 70px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 48px;
+    }
+
+    .intro {
+        margin: auto;
     }
 
     .buttons {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .button {
-        width: 180px;
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .interest-container {
+        flex-direction: column;
+    }
+
+    .section-label {
         text-align: center;
     }
 
-    .hobby-container {
-        flex-direction: column;
+    .interests h2 {
+        text-align: center;
     }
 }
 ```
+v
