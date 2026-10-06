@@ -1,10 +1,10 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my first website - About Me</title>
+    <title>Christopher | My First Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,10 +12,10 @@
 
     <header>
         <nav>
-            <h2 class="logo">Christopher</h2>
+            <a href="index.html" class="logo">Christopher.</a>
 
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,61 +24,99 @@
     </header>
 
     <main>
+
         <section class="hero">
-            <p class="welcome">WELCOME TO MY WEBSITE</p>
 
-            <h1>Create. Innovate. Inspire.</h1>
+            <div class="hero-text">
+                <p class="small-title">HELLO, I'M CHRISTOPHER</p>
 
-            <p class="intro">
-                Hello, my name is <strong>Christopher</strong>.
-                I am a beginner programmer and graphic designer
-                who enjoys learning new skills and creating things
-                with technology.
-            </p>
+                <h1>
+                    Create.<br>
+                    <span>Innovate.</span><br>
+                    Inspire.
+                </h1>
 
-            <div class="buttons">
-                <a href="about.html" class="button">About Me</a>
-                <a href="projects.html" class="button green-button">My Projects</a>
+                <p class="intro">
+                    Welcome to my first website. I am learning
+                    programming and web development while exploring
+                    my creativity through technology and design.
+                </p>
+
+                <div class="buttons">
+                    <a href="about.html" class="button primary">
+                        About Me
+                    </a>
+
+                    <a href="projects.html" class="button secondary">
+                        View Projects
+                    </a>
+                </div>
             </div>
+
+            <div class="hero-card">
+                <p class="card-top">MY FIRST WEBSITE</p>
+
+                <div class="code-box">
+                    <p><span>&lt;h1&gt;</span></p>
+                    <h2>Welcome!</h2>
+                    <p><span>&lt;/h1&gt;</span></p>
+                </div>
+
+                <p class="card-text">
+                    Learning to build ideas<br>
+                    one line of code at a time.
+                </p>
+            </div>
+
         </section>
 
-        <section class="hobbies">
-            <h2>What I Enjoy</h2>
 
-            <div class="hobby-container">
+        <section class="interests">
 
-                <article class="hobby-card">
+            <p class="section-label">WHAT I'M INTO</p>
+
+            <h2>Learning. Creating. Building.</h2>
+
+            <div class="interest-container">
+
+                <article class="interest-card">
+                    <span class="number">01</span>
                     <h3>Programming</h3>
                     <p>
-                        I enjoy learning how websites and applications
-                        are created using code.
+                        Learning how code works and using it to
+                        create useful digital experiences.
                     </p>
                 </article>
 
-                <article class="hobby-card">
+                <article class="interest-card">
+                    <span class="number">02</span>
                     <h3>Web Development</h3>
                     <p>
-                        I enjoy building websites and improving my
-                        skills in HTML, CSS and other technologies.
+                        Building websites with HTML, CSS and
+                        other web technologies.
                     </p>
                 </article>
 
-                <article class="hobby-card">
+                <article class="interest-card">
+                    <span class="number">03</span>
                     <h3>Graphic Design</h3>
                     <p>
-                        I enjoy creating designs and exploring
-                        different creative ideas.
+                        Exploring visual design and turning
+                        creative ideas into digital designs.
                     </p>
                 </article>
 
             </div>
+
         </section>
+
     </main>
 
+
     <footer>
-        <p>&copy; 2026 Christopher. All rights reserved.</p>
+        <p>&copy; 2026 Christopher</p>
     </footer>
 
 </body>
 </html>
-
+```
