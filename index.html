@@ -1,42 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my first website - About Me</title>
     <link rel="stylesheet" href="style.css">
-    <title>Welcome to my first website</title>
 </head>
+
 <body>
 
-    <h1>Create.Innovate.Inspire</h1>
-    <nav>
-        <p><a href="index.html">Home</a> </p>
-        <p><a href="about.html">About</a> </p>
-        <p><a href="projects.html">Projects</a></p>
-    <p><a href="contact.html">Contact</a> </p>
-</nav>
-     <p>
-        Hello! My name is Christopher. I am a university student interested in
-        technology, programming, and learning new skills.
-    </p>
+    <header>
+        <nav>
+            <h2 class="logo">Christopher</h2>
 
-    <h2>My Hobbies and Interests</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul>
-        <li>Programming</li>
-        <li>Graphic Design</li>
-        <li>Playing Guitar</li>
-    </ul>
+    <main>
+        <section class="hero">
+            <p class="welcome">WELCOME TO MY WEBSITE</p>
 
-    <p>
-        Visit my favorite website:
-        <a href="https://www.youtube.com">YouTube</a>
-    </p>
+            <h1>Create. Innovate. Inspire.</h1>
 
-    <p>
-        Contact me:
-        <a href="mailto:wesalachris@gmail.com">Email Me</a>
-    </p>
+            <p class="intro">
+                Hello, my name is <strong>Christopher</strong>.
+                I am a beginner programmer and graphic designer
+                who enjoys learning new skills and creating things
+                with technology.
+            </p>
+
+            <div class="buttons">
+                <a href="about.html" class="button">About Me</a>
+                <a href="projects.html" class="button green-button">My Projects</a>
+            </div>
+        </section>
+
+        <section class="hobbies">
+            <h2>What I Enjoy</h2>
+
+            <div class="hobby-container">
+
+                <article class="hobby-card">
+                    <h3>Programming</h3>
+                    <p>
+                        I enjoy learning how websites and applications
+                        are created using code.
+                    </p>
+                </article>
+
+                <article class="hobby-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        I enjoy building websites and improving my
+                        skills in HTML, CSS and other technologies.
+                    </p>
+                </article>
+
+                <article class="hobby-card">
+                    <h3>Graphic Design</h3>
+                    <p>
+                        I enjoy creating designs and exploring
+                        different creative ideas.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christopher. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
+
